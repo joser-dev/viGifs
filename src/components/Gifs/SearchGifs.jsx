@@ -13,9 +13,9 @@ const SearchGifs = () => {
 
     return (
         <>
-            <div class="results">
-                <h2 class="buscado">{query}</h2>
-                <p class="resultado">{!loading && gifs.length} results</p>
+            <div className="results">
+                <h2 className="buscado">{query}</h2>
+                <p className="resultado">{!loading && gifs.length} results</p>
             </div>
 
             <section className="container-gifs">

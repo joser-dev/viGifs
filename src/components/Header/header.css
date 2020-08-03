@@ -1,0 +1,10 @@
+.logo {
+    text-align: center;
+    color: #ff00f5;
+    font-weight: 200;
+    font-size: 3em;
+}
+
+.logo span {
+    font-weight: 700;
+}

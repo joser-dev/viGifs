@@ -1,0 +1,37 @@
+.container-gifs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+}
+
+@media screen and (min-width: 500px) {
+    .container-gifs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-gifs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.results {
+    display: flex;
+    align-items: center;
+}
+.buscado {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.resultado {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.buscado, .resultado {
+    margin-top: 5px;
+    color: #fff;
+}

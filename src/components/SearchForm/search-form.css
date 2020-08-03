@@ -1,0 +1,32 @@
+.buscador {
+    display: flex;
+    margin-bottom: 30px;   
+}
+
+.buscar-intro {
+    height: 3rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.boton-buscar {
+    background: #ff00f5;
+    cursor: pointer;
+    transition: .3s linear;
+    font-size: 1.5rem;
+    padding: 0 .5em;
+}
+
+.search-icon {
+    color: #fff;
+}
+
+.buscar-intro, .boton-buscar {
+    border-radius: 0;
+    outline: none;
+    border: none;
+}
+
+.boton-buscar:hover {
+    opacity: .7;
+}

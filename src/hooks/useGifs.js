@@ -23,6 +23,8 @@ export default function useGifs(limit = 25, rating = 'g') {
             })
         }
         fetchGifs()
+
+        return () => setGifs([])
     }, [])
 
     return [ gifs, loading ]

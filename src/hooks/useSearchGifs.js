@@ -25,6 +25,7 @@ export default function useSearchGifs(limit = 25, rating = 'g') {
             })
         }
         fetchSearchGifs()
+        return () => setGifs([])
     }, [search, limit, rating])
 
     return [ gifs, loading ]

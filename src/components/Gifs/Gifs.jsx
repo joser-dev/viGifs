@@ -2,6 +2,7 @@ import React from 'react'
 import useGifs from '../../hooks/useGifs'
 import Gif from '../Gif/Gif';
 import './gifs.css'
+import Spinner from '../Spinner'
 
 const Gifs = () => {
 
@@ -10,8 +11,8 @@ const Gifs = () => {
     return (
         <section className="container-gifs">
             { loading
-                ? <p>Loading gifs...</p>
-                : 
+                ? <Spinner />
+                :
                 gifs.map( gif =>
                     <Gif
                         key={gif.id}
